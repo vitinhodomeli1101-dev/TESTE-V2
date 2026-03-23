@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Mecânica WS - João Victor Oliveira</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; }
+    a:focus, input:focus, select:focus, button:focus { outline: 3px solid black; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Oficina Mecânica WS</h1>
+    <p>Especialistas em manutenção automotiva</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#midia">Mídia</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="inicio">
+      <h2>Bem-vindo</h2>
+      <p>Atendimento de qualidade com foco na segurança do seu veículo.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+
+      <article>
+        <h3>Troca de Óleo</h3>
+        <p>Utilizamos óleo de alta performance.</p>
+      </article>
+
+      <article>
+        <h3>Alinhamento</h3>
+        <p>Melhora estabilidade e dirigibilidade.</p>
+      </article>
+
+      <article>
+        <h3>Revisão Geral</h3>
+        <p>Inspeção completa do veículo.</p>
+      </article>
+
+    </section>
+
+    <section id="midia">
+      <h2>Vídeo da Oficina</h2>
+
+      <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <track src="legendas.vtt" kind="subtitles" srclang="pt" label="Português">
+      
+      </video>
+
+      <h3>Áudio informativo</h3>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        
+      </audio>
+
+    </section>
+
+    <aside>
+      <h2>Dicas</h2>
+      <p>Verifique pneus e óleo regularmente.</p>
+    </aside>
+
+    <section id="contato">
+      <h2>Contato</h2>
+
+      <form>
+        <fieldset>
+          <legend>Agendamento</legend>
+
+          <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </p>
+
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" title="Digite apenas números com 10 ou 11 dígitos" required>
+          </p>
+
+          <p>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+          </p>
+
+          <p>
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico" required>
+              <option value="">Selecione</option>
+              <option>Troca de Óleo</option>
+              <option>Alinhamento</option>
+              <option>Revisão</option>
+            </select>
+          </p>
+
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+
+        </fieldset>
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <address>
+      <p>Avenida Desembargador Santos Estanislau</p>
+      <p>João Pessoa - PB</p>
+      <p>(83) 98647 - 3704</p>
+    </address>
+    <p>&copy; 2026 OFICINA WSx</p>
+  </footer>
+
+</body>
+</html>
